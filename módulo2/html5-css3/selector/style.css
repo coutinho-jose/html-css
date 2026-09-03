@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    background-color: #03071e;
+    color: aliceblue;
+    font-family: "Indie Flower", cursive;
+}
+
+h1{
+    
+    color: #9BF74F;
+}
+
+h1#main{
+    color: #4FF784;
+    background-color: #E2F74F;
+}
+
+h1#main2{
+    color: #E2F74F;
+    background-color: #4FF784;
+    text-align: end;
+}
+
+.basico{
+    color: #0C3865;
+}
+
+.basico2{
+    color: #c1121f;
+}
+
+.destaque{
+    color: #fec89a;
+}
+
+h2{
+    
+    color: #4FF7BD;
+}

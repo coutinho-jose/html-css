@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COlocando audio</title>
+    <style>
+        body{
+            background-color: #1e1e2f;
+        }
+      .songs {
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 25px;
+        background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+        border-radius: 15px;
+        /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); */
+        color: #f0f0f0;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      .songs h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        background: linear-gradient(90deg, #ff8c00, #ff0080);
+        /* -webkit-background-clip: text; */
+        -webkit-text-fill-color: transparent;
+        animation: glow 2s infinite alternate;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px #ff8c00;
+        }
+        to {
+          text-shadow: 0 0 20px #ff0080;
+        }
+      }
+
+      .songs audio {
+        width: 100%;
+        margin: 15px 0;
+        filter: drop-shadow(0 0 8px #ff0080);
+        border-radius: 10px;
+      }
+
+      .songs p {
+        margin: 10px 0 5px;
+        font-weight: bold;
+        color: #ffd700;
+      }
+
+      .songs a {
+        display: inline-block;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        background: linear-gradient(90deg, #ff0080, #ff8c00);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      .songs a:hover {
+        transform: scale(1.025);
+        /* box-shadow: 0 0 5px #ff0080; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="songs">
+      <h1>Music Player</h1>
+      <audio
+        src="midia/7.-Da-Muziqal-Chef-MaWhoo-Linda-Kuwe-2.0-feat.-Sam-Deep-Stixx-Sipho-Magudulela.mp3"
+        controls
+      ></audio>
+
+      <p>Baixar música</p>
+      <a
+        href="midia/Bless_The_Gentleman_Ft_Blaq_Major_-_Lengoma.mp3"
+        download=""
+        >Da Muziqal Chef & MaWhoo - Linda Kuwe-2.0 feat.Sam-Deep, Stixx, Sipho
+        Magudulela.mp3</a
+      >
+      <br />
+      <audio preload="metadata" controls>
+        <source
+          src="midia/Bless_The_Gentleman_Ft_Blaq_Major_-_Lengoma.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <br />
+      <p>Baixar música</p>
+      <a
+        href="midia/Bless_The_Gentleman_Ft_Blaq_Major_-_Lengoma.mp3"
+        download="">Bless The Gentleman Ft Blaq Major - Lengoma.mp3</a
+      >
+      <audio preload="metadata" controls>
+        <source
+          src="midia/Bongza & Pale Moloi - Izinyembezi (feat. Ndoose sa).mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <p>Baixar música</p>
+      <a
+        href="midia/Bongza & Pale Moloi - Izinyembezi (feat. Ndoose sa).mp3"
+        download=""
+        >Bongza & Pale Moloi - Izinyembezi feat. Ndoose sa.mp3</a>
+    </div>
+  </body>
+</html>
